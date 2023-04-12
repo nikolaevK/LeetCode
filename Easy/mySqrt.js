@@ -15,7 +15,7 @@ function mySqrt(x) {
   let first = 1,
     last = x;
   while (first <= last) {
-    let mid = Math.floor(first + (last - first) / 2);
+    let mid = Math.floor((first + last) / 2);
     if (mid * mid === x) {
       return mid;
     } else if (mid * mid > x) {
